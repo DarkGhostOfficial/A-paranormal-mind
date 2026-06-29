@@ -12,7 +12,9 @@ find_package(SFML 3 REQUIRED COMPONENTS System Window Graphics Audio)
  
 # ── Executable (only .cpp files here) ────────────────────────────────────────
 add_executable(${PROJECT_NAME}
-    main.cpp
+    src/main.cpp
+    src/Game.cpp
+    include/Game.hpp
 )
  
 # ── Include directories ───────────────────────────────────────────────────────
