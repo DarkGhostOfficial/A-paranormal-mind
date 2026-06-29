@@ -1,6 +1,6 @@
 #include "../include/Game.hpp"
 
-Game::Game() : window(sf::VideoMode({800, 600}), "APM")
+Game::Game() : window(sf::VideoMode({800, 600}), "APM"), player(player)
 {
     window.setFramerateLimit(60); // Sets the maximum fps to 60
 }
@@ -30,10 +30,12 @@ void Game::processEvent()
 
 void Game::update(float dt)
 {
+    player.update(dt);
 }
 
 void Game::render()
 {
     window.clear(sf::Color::Black); // Sets the window color to black.
+    player.render(window);
     window.display(); // Show everything on screen
 }

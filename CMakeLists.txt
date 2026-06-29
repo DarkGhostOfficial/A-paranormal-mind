@@ -15,6 +15,8 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
     src/Game.cpp
     include/Game.hpp
+    include/Player.hpp
+    src/Player.cpp
 )
  
 # ── Include directories ───────────────────────────────────────────────────────

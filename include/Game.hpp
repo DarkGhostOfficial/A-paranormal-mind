@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "../include/Player.hpp"
 
 class Game
 {
@@ -14,4 +15,5 @@ private:
 
     sf::RenderWindow window;
     sf::Clock clock;
+    Player player;
 };
